@@ -8,33 +8,29 @@ const GithubIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex flex-col justify-center pt-32 pb-20 border-b border-zinc-900">
+    <section className="relative pt-32 pb-16 border-b border-zinc-900">
       <div className="max-w-6xl mx-auto px-6 w-full">
         
-        {/* Availability Badge */}
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-xs font-mono mb-8">
+        {/* Status Badge */}
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-xs font-mono mb-6">
           <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
           <span>AVAILABLE FOR CONTRACT & ROLES</span>
         </div>
 
         {/* Main Heading */}
         <div className="max-w-4xl">
-          <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold text-white font-['Outfit'] tracking-tight leading-[1.08] mb-6">
+          <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold text-white font-['Outfit'] tracking-tight leading-[1.08] mb-4">
             Oluwamuyiwa Praise <br />
             <span className="text-zinc-400">Oluwakanyinsayomi</span>
           </h1>
 
-          <p className="text-lg sm:text-xl font-medium text-zinc-300 mb-6">
-            Full Stack & Data Integration Developer — Next.js, Laravel & Predictive Systems
-          </p>
-
-          <p className="text-zinc-400 text-base max-w-2xl leading-relaxed mb-10">
-            Designing resilient web applications, time-series forecasting pipelines (Meta Prophet), self-hosted infrastructure, and real-time middleware.
+          <p className="text-lg sm:text-xl font-medium text-zinc-200 mb-6">
+            Software & Data Developer — Next.js, Laravel & Time-Series AI Systems
           </p>
         </div>
 
-        {/* Contact Info Pills */}
-        <div className="flex flex-wrap items-center gap-3 text-xs text-zinc-300 mb-10">
+        {/* Direct Contact Pills */}
+        <div className="flex flex-wrap items-center gap-3 text-xs text-zinc-300 mb-8">
           <a
             href="mailto:kanyinsayopraise@gmail.com"
             className="flex items-center gap-2 px-3.5 py-2 rounded-lg bg-zinc-950 border border-zinc-800 hover:border-zinc-500 transition-colors"
@@ -65,40 +61,20 @@ export default function Hero() {
         </div>
 
         {/* Action Buttons */}
-        <div className="flex flex-wrap items-center gap-4 mb-16">
+        <div className="flex flex-wrap items-center gap-4">
           <a
             href="#projects"
             className="px-6 py-3 rounded-lg bg-white text-black font-semibold text-xs hover:bg-zinc-200 transition-colors flex items-center gap-2 group"
           >
-            <span>View Featured Work</span>
+            <span>View Live Projects</span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </a>
           <a
             href="#contact"
             className="px-6 py-3 rounded-lg bg-zinc-950 border border-zinc-800 hover:border-zinc-600 text-zinc-200 font-semibold text-xs transition-colors"
           >
-            Get In Touch
+            Contact Developer
           </a>
-        </div>
-
-        {/* Stats Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 rounded-xl bg-zinc-950 border border-zinc-800">
-          <div className="space-y-1">
-            <div className="text-2xl sm:text-3xl font-bold text-white font-['Outfit']">5+</div>
-            <p className="text-xs text-zinc-500">Years Development Experience</p>
-          </div>
-          <div className="space-y-1">
-            <div className="text-2xl sm:text-3xl font-bold text-white font-['Outfit']">15+</div>
-            <p className="text-xs text-zinc-500">Production Systems Built</p>
-          </div>
-          <div className="space-y-1">
-            <div className="text-2xl sm:text-3xl font-bold text-white font-['Outfit']">99.9%</div>
-            <p className="text-xs text-zinc-500">Infrastructure Uptime Rate</p>
-          </div>
-          <div className="space-y-1">
-            <div className="text-2xl sm:text-3xl font-bold text-white font-['Outfit']">100%</div>
-            <p className="text-xs text-zinc-500">Client Delivery Rating</p>
-          </div>
         </div>
 
       </div>
