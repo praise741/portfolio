@@ -7,8 +7,6 @@ const nextConfig = {
   },
   ...(isGithubPages && {
     output: "export",
-    assetPrefix: "/portfolio",
-    basePath: "/portfolio",
   }),
 }
 
