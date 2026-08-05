@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { Code2, ArrowUp, Mail } from "lucide-react"
+import { ArrowUp } from "lucide-react"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -11,34 +11,29 @@ export default function Footer() {
   }
 
   return (
-    <footer className="py-12 border-t border-slate-800/80 bg-[#060910]">
+    <footer className="py-10 bg-black border-t border-zinc-900">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800/80">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-6 border-b border-zinc-900">
           
           {/* Brand */}
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white shadow-md">
-              <Code2 className="w-4 h-4" />
-            </div>
-            <span className="text-lg font-bold text-white font-['Outfit']">
-              Praise<span className="text-cyan-400">.dev</span>
-            </span>
+          <div className="text-base font-bold text-white font-['Outfit']">
+            Praise<span className="text-zinc-500">.dev</span>
           </div>
 
-          {/* Quick Links */}
-          <div className="flex flex-wrap items-center justify-center gap-6 text-xs text-slate-400">
-            <Link href="#about" className="hover:text-cyan-400 transition-colors">About</Link>
-            <Link href="#skills" className="hover:text-cyan-400 transition-colors">Skills</Link>
-            <Link href="#projects" className="hover:text-cyan-400 transition-colors">Projects</Link>
-            <Link href="#experience" className="hover:text-cyan-400 transition-colors">Experience</Link>
-            <Link href="#contact" className="hover:text-cyan-400 transition-colors">Contact</Link>
+          {/* Nav */}
+          <div className="flex flex-wrap items-center justify-center gap-6 text-xs text-zinc-400">
+            <Link href="#about" className="hover:text-white transition-colors">About</Link>
+            <Link href="#skills" className="hover:text-white transition-colors">Skills</Link>
+            <Link href="#projects" className="hover:text-white transition-colors">Projects</Link>
+            <Link href="#experience" className="hover:text-white transition-colors">Experience</Link>
+            <Link href="#contact" className="hover:text-white transition-colors">Contact</Link>
           </div>
 
-          {/* Back to top */}
+          {/* Top */}
           <button
             onClick={scrollToTop}
-            className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 hover:border-cyan-500/40 text-slate-400 hover:text-cyan-400 transition-all flex items-center gap-1.5 text-xs font-semibold"
-            aria-label="Scroll back to top"
+            className="p-2 rounded-lg bg-zinc-950 border border-zinc-800 hover:border-zinc-700 text-zinc-400 hover:text-white transition-colors flex items-center gap-1.5 text-xs font-medium"
+            aria-label="Scroll to top"
           >
             <span>Back to top</span>
             <ArrowUp className="w-3.5 h-3.5" />
@@ -46,24 +41,23 @@ export default function Footer() {
 
         </div>
 
-        {/* Bottom copyright row */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-500">
           <p>
-            &copy; {currentYear} Oluwamuyiwa Praise Oluwakanyinsayomi. Built with Next.js & Tailwind CSS.
+            &copy; {currentYear} Oluwamuyiwa Praise Oluwakanyinsayomi. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <a
               href="https://github.com/Praise741"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-cyan-400 transition-colors"
+              className="hover:text-white transition-colors"
             >
               GitHub
             </a>
             <span>•</span>
             <a
               href="mailto:kanyinsayopraise@gmail.com"
-              className="hover:text-cyan-400 transition-colors"
+              className="hover:text-white transition-colors"
             >
               Email
             </a>

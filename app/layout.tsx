@@ -2,26 +2,8 @@ import "./globals.css"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Oluwamuyiwa Praise Oluwakanyinsayomi | Full Stack & Data Integration Developer",
-  description: "Senior Full Stack & Data Integration Developer specializing in Next.js, Laravel, Appwrite, time-series market forecasting, and scalable logistics software.",
-  keywords: [
-    "Oluwamuyiwa Praise Oluwakanyinsayomi",
-    "Praise741",
-    "Full Stack Developer",
-    "Next.js Developer",
-    "Laravel Developer",
-    "Data Integration",
-    "Meta Prophet",
-    "Logistics Software",
-    "Akure Nigeria Developer"
-  ],
-  authors: [{ name: "Oluwamuyiwa Praise Oluwakanyinsayomi" }],
-  openGraph: {
-    title: "Oluwamuyiwa Praise Oluwakanyinsayomi | Full Stack & Data Integration Developer",
-    description: "Building production-grade web applications, predictive time-series AI platforms, and real-time logistics systems.",
-    type: "website",
-    url: "https://portfolio.lonnecapp.com.ng",
-  },
+  title: "Oluwamuyiwa Praise Oluwakanyinsayomi — Software & Data Developer",
+  description: "Full Stack & Data Integration Developer specializing in Next.js, Laravel, self-hosted infrastructure, and predictive time-series systems.",
   icons: {
     icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>",
   },
@@ -42,13 +24,8 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-[#080c14] text-slate-200 antialiased selection:bg-cyan-500/30 selection:text-cyan-200">
-        <div className="relative min-h-screen overflow-hidden">
-          {/* Ambient Lighting Orbs */}
-          <div className="ambient-glow bg-cyan-500/20 top-[-100px] left-[-100px] pointer-events-none" />
-          <div className="ambient-glow bg-indigo-600/20 top-[40%] right-[-150px] pointer-events-none" />
-          <div className="ambient-glow bg-purple-600/15 bottom-[-100px] left-[20%] pointer-events-none" />
-          
+      <body className="bg-black text-zinc-100 antialiased selection:bg-white selection:text-black">
+        <div className="min-h-screen bg-black">
           {children}
         </div>
       </body>
