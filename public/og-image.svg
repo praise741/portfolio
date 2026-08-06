@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0a0a0a"/>
+  <path d="M12.3 2.4l3.5 7H22l-6.5 5.5 2.5 8-6.5-4-6.5 4 2.5-8L2 9.4h6.2z" fill="#ffffff" opacity="0.12" transform="translate(528, 51) scale(6)"/>
+  <text x="600" y="340" font-family="Outfit, -apple-system, BlinkMacSystemFont, sans-serif" font-size="96" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="-1.5">Praise.dev</text>
+  <text x="600" y="415" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-size="28" fill="#a1a1aa" text-anchor="middle">Software &amp; Data Developer</text>
+  <text x="600" y="468" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-size="16" fill="#71717a" text-anchor="middle">Next.js  Nationwide &#183; Laravel  Time-Series AI</text>
+</svg>

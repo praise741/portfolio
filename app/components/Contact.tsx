@@ -32,9 +32,9 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-20 border-b border-zinc-900">
+    <section id="contact" className="pt-20 pb-24 border-b border-zinc-900">
       <div className="max-w-6xl mx-auto px-6">
-        
+
         {/* Section Header */}
         <div className="mb-12">
           <span className="text-xs font-mono text-zinc-500 uppercase tracking-widest">
@@ -46,7 +46,7 @@ export default function Contact() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
-          
+
           {/* Left Direct Details */}
           <div className="lg:col-span-5 space-y-4">
             <div className="p-6 rounded-xl bg-zinc-950 border border-zinc-800 space-y-6">

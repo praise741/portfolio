@@ -47,11 +47,11 @@ export default function Skills() {
     : skillsData.filter((s) => s.category === activeCategory)
 
   return (
-    <section id="skills" className="py-20 border-b border-zinc-900">
+    <section id="skills" className="pt-20 pb-24 border-b border-zinc-900">
       <div className="max-w-6xl mx-auto px-6">
-        
+
         {/* Section Header */}
-        <div className="mb-10">
+        <div className="mb-12">
           <span className="text-xs font-mono text-zinc-500 uppercase tracking-widest">
             // TECHNICAL EXPERTISE
           </span>
@@ -61,7 +61,7 @@ export default function Skills() {
         </div>
 
         {/* Filter Tabs */}
-        <div className="flex flex-wrap gap-2 mb-10 pb-2">
+        <div className="flex flex-wrap gap-2 mb-12 pb-2">
           {categories.map((cat) => {
             const Icon = cat.icon
             const isActive = activeCategory === cat.id
@@ -83,7 +83,7 @@ export default function Skills() {
         </div>
 
         {/* Skills Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredSkills.map((skill, idx) => (
             <div
               key={idx}

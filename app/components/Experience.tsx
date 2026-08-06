@@ -30,9 +30,9 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-20 border-b border-zinc-900">
+    <section id="experience" className="pt-20 pb-24 border-b border-zinc-900">
       <div className="max-w-6xl mx-auto px-6">
-        
+
         {/* Section Header */}
         <div className="mb-12">
           <span className="text-xs font-mono text-zinc-500 uppercase tracking-widest">
@@ -49,7 +49,7 @@ export default function Experience() {
             const isWork = exp.type === "work"
             return (
               <div key={idx} className="relative">
-                
+
                 {/* Node */}
                 <div className="absolute -left-[31px] md:-left-[47px] top-1.5 w-8 h-8 rounded-lg bg-zinc-950 border border-zinc-800 flex items-center justify-center text-white">
                   {isWork ? <Briefcase className="w-4 h-4" /> : <GraduationCap className="w-4 h-4" />}

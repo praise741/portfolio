@@ -11,10 +11,10 @@ export default function Footer() {
   }
 
   return (
-    <footer className="py-10 bg-black border-t border-zinc-900">
+    <footer className="py-16 bg-zinc-950 border-t border-zinc-900">
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-6 border-b border-zinc-900">
-          
+
           {/* Brand */}
           <div className="text-base font-bold text-white font-['Outfit']">
             Praise<span className="text-zinc-500">.dev</span>

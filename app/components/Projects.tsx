@@ -4,6 +4,14 @@ import { ExternalLink } from "lucide-react"
 
 const featuredProjects = [
   {
+    title: "The Boxx by Lasco",
+    url: "https://theboxxbylasco.com/",
+    domain: "theboxxbylasco.com",
+    role: "Full Stack (Laravel Multi-Vendor E-Commerce)",
+    description: "Multi-vendor electronics marketplace with 1500+ products across 50+ brands, automated inventory sync, and integrated checkout flow.",
+    tech: ["Laravel", "PHP", "MySQL", "Tailwind CSS"],
+  },
+  {
     title: "Brandify Marketplace",
     url: "https://brandifyng.app",
     domain: "brandifyng.app",
@@ -18,14 +26,6 @@ const featuredProjects = [
     role: "Full Stack (Next.js 15 & Appwrite)",
     description: "Enterprise logistics network featuring real-time parcel tracking, customer/courier portals, and dynamic delivery pricing.",
     tech: ["Next.js 15", "React 19", "Appwrite", "Supabase", "Tailwind CSS"],
-  },
-  {
-    title: "Market Matrix Analytics",
-    url: "https://marketmatrix.app",
-    domain: "marketmatrix.app",
-    role: "Data Integration & Frontend (FastAPI & Meta Prophet)",
-    description: "Predictive price forecasting platform using Meta Prophet Python models and real-time interactive financial dashboards.",
-    tech: ["Next.js", "Python", "FastAPI", "Meta Prophet", "Chart.js"],
   },
   {
     title: "Lasco Electronics",
@@ -43,15 +43,23 @@ const featuredProjects = [
     description: "Modern fashion retail storefront with responsive collections, instant product filters, and payment processing.",
     tech: ["React", "JavaScript", "Tailwind CSS", "PHP"],
   },
+  {
+    title: "Market Matrix Analytics",
+    url: "https://marketmatrix.app",
+    domain: "marketmatrix.app",
+    role: "Data Integration & Frontend (FastAPI & Meta Prophet)",
+    description: "Predictive price forecasting platform using Meta Prophet Python models and real-time interactive financial dashboards.",
+    tech: ["Next.js", "Python", "FastAPI", "Meta Prophet", "Chart.js"],
+  },
 ]
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-16 border-b border-zinc-900">
+    <section id="projects" className="pt-20 pb-24 border-b border-zinc-900">
       <div className="max-w-6xl mx-auto px-6">
-        
+
         {/* Section Header */}
-        <div className="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div className="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div>
             <span className="text-xs font-mono text-zinc-500 uppercase tracking-widest">
               // LIVE FEATURED PROJECTS

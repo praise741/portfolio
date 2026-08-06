@@ -8,9 +8,8 @@ const GithubIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
 
 export default function Hero() {
   return (
-    <section className="relative pt-32 pb-16 border-b border-zinc-900">
-      <div className="max-w-6xl mx-auto px-6 w-full">
-        
+    <section className="relative pt-24 pb-20 border-b border-zinc-900">
+      <div className="max-w-6xl mx-auto px-6">
         {/* Status Badge */}
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-xs font-mono mb-6">
           <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
@@ -19,18 +18,18 @@ export default function Hero() {
 
         {/* Main Heading */}
         <div className="max-w-4xl">
-          <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold text-white font-['Outfit'] tracking-tight leading-[1.08] mb-4">
+          <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold text-white font-['Outfit'] tracking-tight leading-[1.08] mb-6">
             Oluwamuyiwa Praise <br />
             <span className="text-zinc-400">Oluwakanyinsayomi</span>
           </h1>
 
-          <p className="text-lg sm:text-xl font-medium text-zinc-200 mb-6">
+          <p className="text-lg sm:text-xl font-medium text-zinc-200 mb-8">
             Software & Data Developer — Next.js, Laravel & Time-Series AI Systems
           </p>
         </div>
 
         {/* Direct Contact Pills */}
-        <div className="flex flex-wrap items-center gap-3 text-xs text-zinc-300 mb-8">
+        <div className="flex flex-wrap items-center gap-3 text-xs text-zinc-300 mb-10">
           <a
             href="mailto:kanyinsayopraise@gmail.com"
             className="flex items-center gap-2 px-3.5 py-2 rounded-lg bg-zinc-950 border border-zinc-800 hover:border-zinc-500 transition-colors"

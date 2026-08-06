@@ -4,6 +4,13 @@
   :root {
     --font-inter: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     --font-outfit: 'Outfit', sans-serif;
+    --color-bg: #090909;
+    --color-bg-alt: #0a0a0a;
+    --color-surface: #09090b;
+    --color-border: #27272a;
+    --color-text-primary: #fafafa;
+    --color-text-secondary: #a1a1aa;
+    --color-text-tertiary: #71717a;
   }
 
   html {
@@ -13,29 +20,34 @@
 
   body {
     font-family: var(--font-inter);
-    background-color: #000000;
-    color: #fafafa;
+    background-color: var(--color-bg);
+    color: var(--color-text-primary);
     overflow-x: hidden;
     line-height: 1.6;
+  }
+
+  :focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
   }
 }
 
 /* Minimalist Monochrome Utilities */
 .mono-card {
-  background: #09090b;
-  border: 1px solid #27272a;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
   transition: border-color 0.2s ease, transform 0.2s ease;
 }
 
 .mono-card:hover {
-  border-color: #52525b;
+  border-color: var(--color-text-tertiary);
 }
 
 .mono-panel {
   background: rgba(9, 9, 11, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid #27272a;
+  border: 1px solid var(--color-border);
 }
 
 /* Custom Minimal Scrollbar */
@@ -44,14 +56,14 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #000000;
+  background: var(--color-bg);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #27272a;
+  background: var(--color-border);
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #3f3f46;
+  background: var(--color-text-tertiary);
 }
